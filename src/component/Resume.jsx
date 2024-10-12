@@ -10,7 +10,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
-import profile from "../images/IMG_8927.jpg"
+import profile from "../images/IMG_8927.jpg";
 import canva from "../images/canva.png";
 import github from "../images/github.png";
 import shop from "../images/photoshop.png";
@@ -20,13 +20,45 @@ import vb from "../images/vb.png";
 import vs from "../images/vscode.png";
 import word from "../images/word.png";
 
-
-
+const mockData = [
+  {
+    src: pro,
+    alt: "Premiere Pro",
+  },
+  {
+    src: shop,
+    alt: "shop",
+  },
+  {
+    src: vs,
+    alt: "vs",
+  },
+  {
+    src: vb,
+    alt: "vb",
+  },
+  {
+    src: github,
+    alt: "github",
+  },
+  {
+    src: word,
+    alt: "word",
+  },
+  {
+    src: point,
+    alt: "point",
+  },
+  {
+    src: canva,
+    alt: "canva",
+  },
+];
 
 const Resume = () => {
   return (
     <div className="bg-white p-6 max-w-4xl mx-auto font-sans">
-      <div className="flex flex-col sm:flex-row items-center mb-6 bg-gray-100 p-4 rounded-lg">
+      <div className="flex flex-col sm:flex-row items-center mb-6 bg-gray-100 p-4 rounded-lg justify-center">
         <img
           src={profile}
           alt="Profile"
@@ -100,46 +132,14 @@ const Resume = () => {
 
           <Section title="Program" icon={<Code className="text-blue-500" />}>
             <div className="grid grid-cols-4 gap-3">
-              <img
-                src={pro}
-                alt="Premiere Pro"
-                className="w-8 h-8"
-              />
-              <img
-                src={shop}
-                alt="Photoshop"
-                className="w-8 h-8"
-              />
-              <img
-                src={vs}
-                alt="Visual Studio Code"
-                className="w-8 h-8"
-              />
-              <img
-                src={vb}
-                alt="Visual Studio"
-                className="w-8 h-8"
-              />
-              <img
-                src={github}
-                alt="GitHub"
-                className="w-8 h-8"
-              />
-              <img
-                src={word}
-                alt="Word"
-                className="w-8 h-8"
-              />
-              <img
-                src={point}
-                alt="PowerPoint"
-                className="w-8 h-8"
-              />
-              <img
-                src={canva}
-                alt="Canva"
-                className="w-8 h-8"
-              />
+              {mockData.map((item, index) => (
+                <img
+                  key={index}
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-8 h-8"
+                />
+              ))}
             </div>
           </Section>
 

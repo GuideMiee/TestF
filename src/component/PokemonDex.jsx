@@ -5,7 +5,7 @@ function PokemonDex() {
   const [pokemon, setPokemon] = useState(null); // สถานะสำหรับเก็บข้อมูลโปเกมอน
   const [isLoading, setIsLoading] = useState(false); // สถานะสำหรับจัดการการโหลดข้อมูล
   const [searchTerm, setSearchTerm] = useState(''); // สถานะสำหรับเก็บคำค้นหาชื่อโปเกมอน
-
+  
   const getRandomPokemon = async () => {
     setIsLoading(true); // ตั้งค่าสถานะเป็นกำลังโหลด
     try {
@@ -13,10 +13,12 @@ function PokemonDex() {
       if (searchTerm) {
         // ถ้ามีคำค้นหา ให้ค้นหาจากชื่อโปเกมอนใน API
         response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm.toLowerCase()}`);
+        console.log('get search pokemon', response)
       } else {
         // ถ้าไม่มีคำค้นหา ให้สุ่มโปเกมอนจากหมายเลข 1 ถึง 151
         const randomId = Math.floor(Math.random() * 151) + 1;
         response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
+        console.log('get Math', randomId)
       }
       setPokemon(response.data); // ตั้งค่าข้อมูลโปเกมอนที่ได้จาก API
     } catch (error) {
@@ -33,6 +35,7 @@ function PokemonDex() {
     setPokemon(null); // ลบข้อมูลโปเกมอน
     setSearchTerm(''); // รีเซ็ตคำค้นหา
   };
+  console.log('love u jub jub',pokemon)
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
@@ -75,8 +78,8 @@ function PokemonDex() {
           {pokemon.types[1] && <p>Element 2: {pokemon.types[1].type.name}</p>}
           <p className="font-bold">Base stats:</p>
           <ul>
-            {pokemon.stats.map((stat, idx) => (
-              <li key={idx}>{stat.stat.name} = {stat.base_stat}</li>
+            {pokemon.stats.map((stat, index) => (
+              <li key={index}>{stat.stat.name} = {stat.base_stat}</li>
             ))}
           </ul>
         </div>

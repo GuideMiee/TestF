@@ -18,7 +18,7 @@ const Resume = () => {
     <div className="bg-white p-6 max-w-4xl mx-auto font-sans">
       <div className="flex flex-col sm:flex-row items-center mb-6 bg-gray-100 p-4 rounded-lg">
         <img
-          src="public/images/IMG_8927.jpg"
+          src="../images/IMG_8927.jpg"
           alt="Profile"
           className="w-24 h-24 object-cover rounded-full mb-4 sm:mb-0 sm:mr-6 border-4 border-white"
         />
@@ -91,42 +91,42 @@ const Resume = () => {
           <Section title="Program" icon={<Code className="text-blue-500" />}>
             <div className="grid grid-cols-4 gap-3">
               <img
-                src="public/images/premierepro.png"
+                src="../images/premierepro.png"
                 alt="Premiere Pro"
                 className="w-8 h-8"
               />
               <img
-                src="public/images/photoshop.png"
+                src="../images/photoshop.png"
                 alt="Photoshop"
                 className="w-8 h-8"
               />
               <img
-                src="public/images/vscode.png"
+                src="../images/vscode.png"
                 alt="Visual Studio Code"
                 className="w-8 h-8"
               />
               <img
-                src="public/images/vb.png"
+                src="../images/vb.png"
                 alt="Visual Studio"
                 className="w-8 h-8"
               />
               <img
-                src="public/images/github.png"
+                src="../images/github.png"
                 alt="GitHub"
                 className="w-8 h-8"
               />
               <img
-                src="public/images/word.png"
+                src="../images/word.png"
                 alt="Word"
                 className="w-8 h-8"
               />
               <img
-                src="public/images/powerpoint.png"
+                src="../images/powerpoint.png"
                 alt="PowerPoint"
                 className="w-8 h-8"
               />
               <img
-                src="public/images/canva.png"
+                src="../images/canva.png"
                 alt="Canva"
                 className="w-8 h-8"
               />

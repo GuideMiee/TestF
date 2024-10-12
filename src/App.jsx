@@ -16,6 +16,7 @@ export default function App() {
           <Route path="/Resume" element={<Resume />} />
           <Route path="/StarTriangle" element={<StarTriangle />} /> {/* จัดให้ StarTriangle แสดงที่หน้าแรก */}
           <Route path="/" element={<Navigate to="StarTriangle" />} />
+          <Route path="*" element={<StarTriangle />} /> {/* This will show the NotFound component */}
         </Routes>
       </div>
     </Router>

@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <div className="bg-white p-6 max-w-4xl mx-auto font-sans">
       <div className="flex flex-col sm:flex-row items-center mb-6 bg-gray-100 p-4 rounded-lg">
-      <img src="Images/IMG_8927.jpg" alt="Profile" className="w-24 h-24 object-cover rounded-full mb-4 sm:mb-0 sm:mr-6 border-4 border-white" />
+      <img src="src/images/IMG_8927.jpg" alt="Profile" className="w-24 h-24 object-cover rounded-full mb-4 sm:mb-0 sm:mr-6 border-4 border-white" />
 
 
       {/* <img src="/src/assets/IMG_8927.jpg" alt="Profile" className="w-24 h-24 rounded-full mb-4 sm:mb-0 sm:mr-6 border-4 border-white" /> */}

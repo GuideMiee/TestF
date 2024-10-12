@@ -15,7 +15,9 @@ export default function App() {
           <Route path="/pokemondex" element={<PokemonDex />} />
           <Route path="/ResponsiveResume" element={<ResponsiveResume />} />
           <Route path="/StarTriangle" element={<StarTriangle />} /> {/* จัดให้ StarTriangle แสดงที่หน้าแรก */}
+          <Route path="*" element={<Navigate to="StarTriangle" />} />
         </Routes>
+        <div className="flex">Welcome</div>
       </div>
     </Router>
   );

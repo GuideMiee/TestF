@@ -18,7 +18,7 @@ function StarTriangle() {
       stars += '*'.repeat(numStars) + '\n'; // เพิ่มดาวในบรรทัดใหม่
     }
 
-    // สร้างส่วนล่างของสามเหลี่ยม (ถ้าต้องการ)
+    // สร้างส่วนล่างของสามเหลี่ยม 
     for (let i = number - 1; i > 0; i--) {
       const numStars = 2 * i - 1;
       stars += '*'.repeat(numStars) + '\n'; // เพิ่มดาวในบรรทัดใหม่

@@ -10,18 +10,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isAuthen, setIsAuthen] = useState(false);
 
   const hdlToggle = () => {
     setIsOpen(!isOpen);
-  };
-
-  const logIn = () => {
-    setIsAuthen(true);
-  };
-
-  const logOut = () => {
-    setIsAuthen(false);
   };
 
   return (

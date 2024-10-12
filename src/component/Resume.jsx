@@ -1,7 +1,7 @@
 import React from 'react';
 import { Book, Award, Briefcase, User, Code, Globe, Phone, Mail, MapPin } from 'lucide-react';
 
-const ResponsiveResume = () => {
+const Resume = () => {
   return (
     <div className="bg-white p-6 max-w-4xl mx-auto font-sans">
       <div className="flex flex-col sm:flex-row items-center mb-6 bg-gray-100 p-4 rounded-lg">
@@ -133,4 +133,4 @@ const Section = ({ title, icon, children }) => {
   );
 };
 
-export default ResponsiveResume;
+export default Resume;

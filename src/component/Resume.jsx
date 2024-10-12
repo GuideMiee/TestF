@@ -10,6 +10,16 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import profile from "../images/IMG_8927.jpg"
+import canva from "../images/canva.png";
+import github from "../images/github.png";
+import shop from "../images/photoshop.png";
+import point from "../images/powerpoint.png";
+import pro from "../images/premierepro.png";
+import vb from "../images/vb.png";
+import vs from "../images/vscode.png";
+import word from "../images/word.png";
+
 
 
 
@@ -18,7 +28,7 @@ const Resume = () => {
     <div className="bg-white p-6 max-w-4xl mx-auto font-sans">
       <div className="flex flex-col sm:flex-row items-center mb-6 bg-gray-100 p-4 rounded-lg">
         <img
-          src="../images/IMG_8927.jpg"
+          src={profile}
           alt="Profile"
           className="w-24 h-24 object-cover rounded-full mb-4 sm:mb-0 sm:mr-6 border-4 border-white"
         />
@@ -91,42 +101,42 @@ const Resume = () => {
           <Section title="Program" icon={<Code className="text-blue-500" />}>
             <div className="grid grid-cols-4 gap-3">
               <img
-                src="../images/premierepro.png"
+                src={pro}
                 alt="Premiere Pro"
                 className="w-8 h-8"
               />
               <img
-                src="../images/photoshop.png"
+                src={shop}
                 alt="Photoshop"
                 className="w-8 h-8"
               />
               <img
-                src="../images/vscode.png"
+                src={vs}
                 alt="Visual Studio Code"
                 className="w-8 h-8"
               />
               <img
-                src="../images/vb.png"
+                src={vb}
                 alt="Visual Studio"
                 className="w-8 h-8"
               />
               <img
-                src="../images/github.png"
+                src={github}
                 alt="GitHub"
                 className="w-8 h-8"
               />
               <img
-                src="../images/word.png"
+                src={word}
                 alt="Word"
                 className="w-8 h-8"
               />
               <img
-                src="../images/powerpoint.png"
+                src={point}
                 alt="PowerPoint"
                 className="w-8 h-8"
               />
               <img
-                src="../images/canva.png"
+                src={canva}
                 alt="Canva"
                 className="w-8 h-8"
               />

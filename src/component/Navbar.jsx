@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 // import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
-
+import star from "../images/star.png";
+import poke from "../images/pokeball.png";
+import resume from "../images/resume.png";
 
 <Link to="/starttriangle">StarTriangle</Link>
 
@@ -24,19 +26,19 @@ const Navbar = () => {
             <li className="text-gray-800 hover:scale-110 hover:-translate-y-1 duration-200 cursor-pointer">
             <Link to="/StarTriangle">
                 StarTriangle
-                <img src="public/images/star.png" alt="Star Triangle" className="w-8 h-8 ml-8" />
+                <img src={star} alt="Star Triangle" className="w-8 h-8 ml-8" />
                 </Link>
             </li>
             <li className="text-gray-800 hover:scale-110 hover:-translate-y-1 duration-200 cursor-pointer">
             <Link to="/PokemonDex">
                 PokemonAPI
-                <img src="public/images/pokeball.png" alt="Pokemon API" className="w-8 h-8 ml-9" />
+                <img src={poke} alt="Pokemon API" className="w-8 h-8 ml-9" />
                 </Link>
             </li>
             <li className="text-gray-800 hover:scale-110 hover:-translate-y-1 duration-200 cursor-pointer">
             <Link to="/Resume">
                 MyResume
-                <img src="public/images/resume.png" alt="My Resume" className="w-8 h-8 ml-8" />
+                <img src={resume} alt="My Resume" className="w-8 h-8 ml-8" />
                 </Link>
             </li>
           </ul>

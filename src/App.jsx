@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // ใช้ Routes แทน Switch
 import StarTriangle from './component/StarTriangle';
-import PokemonDex from './component/pokemonDex';
+import PokemonDex from './component/PokemonDex';
 import ResponsiveResume from './component/Resume'; 
 import Navbar from "./component/navbar";
 
